@@ -1,0 +1,265 @@
+/* POMELO CSS FRAMEWORK FOR IPHONE 1.0 */
+/* This file is under GPL licence, take it, distribute it and do whatever you want to do. */
+
+
+body {
+	background-color: rgb(197,204,211);
+	font-family: Helvetica;
+	margin: 0 0 0 10px;
+	padding: 0;
+	-webkit-text-size-adjust: none;
+	}
+	
+	
+	/* header labels. Used to entitle a set of links */
+	
+	h1 {
+		color: rgb(76,86,108);
+		font: bold 18px Helvetica;
+		margin:0;
+		padding:10px;		  
+		}
+		
+	
+	/* rounded rectangle'd lists */
+	
+	ul {
+		color: black;
+		background: #fff;
+		border: 1px solid rgb(180,180,180);
+		font: bold 17px Helvetica;
+		font-weight:bold;
+		padding: 0;	   
+		margin: 0 10px 17px 0;
+		-webkit-border-radius: 8px;
+		}
+		
+		
+		li {
+			color: rgb(50,79,133);
+			list-style-type: none;	
+			border-top: 1px solid rgb(180,180,180);
+			padding: 10px 10px 14px 10px;
+			}
+			
+			/* controls the radius bordes */
+		
+			li:first-child {	
+				border-top: 0;
+				-webkit-border-top-left-radius: 8px;
+				-webkit-border-top-right-radius: 8px;
+				}
+				
+			li:last-child {	
+				-webkit-border-bottom-left-radius: 8px;
+				-webkit-border-bottom-right-radius: 8px;
+				}
+				
+				
+			li:hover {
+				background: rgb(51,102,204);
+			}
+			
+				
+				
+				
+		/* main link on lists */
+		
+		ul li a {
+			color: black;
+			text-decoration: none;
+			padding: 10px 10px 10px 10px;
+			margin: -10px;
+			display: block;
+			-webkit-tap-highlight-color:rgba(0,0,0,0);
+			}
+			
+			ul li a.arrow {
+				background-image: url(/images/chevron.png); 
+				background-repeat: no-repeat;
+				background-position: right 15px;
+			}
+			
+			ul li a.field {
+				color: rgb(50,79,133);
+				font: normal 17px Helvetica;
+			}
+			
+			ul li a.arrow small {
+				padding-right: 20px;
+			}
+			
+			
+			ul li a:hover, ul li a:hover small, ul li:hover h3 {
+				color: white;
+			}
+	
+				
+			ul li:last-child a {
+				padding: 10px 10px 14px 10px;
+				margin: -10px -10px -14px -10px;
+				}
+				
+				
+				
+				
+			/* individual list */
+			
+			ul.individual {
+				border: 0;
+				background: none;
+				clear: both;
+				height: 45px;
+			}
+			
+				ul.individual li {
+					color: rgb(183,190,205);
+					background: white;
+					border: 1px solid rgb(180,180,180);
+					font-size: 14px;
+					text-align: center;
+					-webkit-border-radius: 8px;
+					-webkit-box-sizing: border-box;
+					width: 48%;
+					float:left;
+					display: block;
+					padding: 11px 10px 14px 10px;
+					}
+				
+					ul.individual li + li {
+						float: right;
+						
+					}
+					
+					
+					ul.individual li a {
+						color: rgb(50,79,133);
+						line-height: 16px;
+						margin: -11px -10px -14px -10px;
+						padding: 11px 10px 14px 10px;
+						-webkit-border-radius: 8px;
+					}
+					
+						ul.individual li a:hover {
+							color: #fff;
+							background: #36c;
+							}
+					
+					
+					
+					
+					
+					
+					
+				
+			
+				
+		/* fields list */
+		
+		ul.fields {
+			
+		}	
+		
+			ul.fields li {
+				font-size: 13px;
+			}
+		
+			ul.fields li h3 {
+				font-size: 13px;
+				text-align: right;
+				width: 70px;
+				margin: 2px 15px 0 0;
+				float: left;
+				display: inline-block;
+			}
+			
+				ul.fields li a {
+					margin-top: -9px;
+					display: inline-block;
+					clear: right;
+					width: 190px;
+					height: 100%;
+				}
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+				
+				
+				
+				
+	p {
+		color: rgb(76,86,108);
+		font: 14px Helvetica;
+		text-align: center;
+		text-shadow: white 0 1px 0;
+		margin: 0 10px 17px 0;
+		}
+		
+		
+		li small {
+			color: rgb(50,79,133);
+			font: normal 17px Helvetica;
+			float: right;
+		}
+		
+		
+		
+		
+		
+		/* fields list */
+		
+		ul.form {
+			
+		}
+		
+			ul.form li {
+				padding: 7px 10px;
+			}
+			
+			ul.form li:hover { background: #fff; }
+		
+			ul li input[type="text"], ul li input[type="password"], ul li textarea, ul li select {
+				color: #777;
+				background: white;
+				border: 0;				
+				font: normal 17px Helvetica;
+				padding: 0;
+				display: inline-block;
+				margin-left: 0px;
+				width: 280px;
+			}
+			
+				ul li textarea {
+					height: 120px;
+					padding: 0;
+					text-indent: -2px;
+				}
+				
+				ul li select {
+					text-indent: -6px;
+					background: transparent url(/images/chevron.png) no-repeat 270px 3px;
+				}
+				
+				ul li input[type="checkbox"], ul li input[type="radio"] {
+					margin: 0;
+					color: rgb(50,79,133);
+					padding: 10px 10px;
+					}
+				
+				ul li input[type="checkbox"]:after, ul li input[type="radio"]:after {
+					content: attr(title);
+					font: 17px Helvetica;
+					display: block;
+					width: 246px;
+					margin: -12px 0 0 17px;
+					}
+				
+
+		

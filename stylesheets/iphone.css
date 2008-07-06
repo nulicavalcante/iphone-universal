@@ -3,12 +3,30 @@
 
 
 body {
-	background-color: rgb(197,204,211);
+	background-color: rgb(197,204,211) !important;
+	background-image: url(../images/stripes.png);
 	font-family: Helvetica;
 	margin: 0 0 0 10px;
 	padding: 0;
+	-webkit-user-select: none;
 	-webkit-text-size-adjust: none;
 	}
+	
+	body#kitindex {
+		background: url(../images/stripes.png) top left,
+		url(../images/kitbg.png) top left no-repeat;
+	}
+	
+	
+	div#iphonedevlogo h1 {
+		color: transparent;
+		margin: 0 0 0 -1px;
+		padding: 0;
+		width: 301px;
+		height: 100px;
+		background: url(../images/iphoneuikitlogo.png) no-repeat center;
+	}
+	
 	
 	
 	/* header labels. Used to entitle a set of links */
@@ -17,9 +35,10 @@ body {
 		color: rgb(76,86,108);
 		font: bold 18px Helvetica;
 		margin:0;
-		padding:10px;		  
+		padding:10px;
+		text-shadow: rgb(255,255,255) 0 1px 0;	  
 		}
-		
+				
 	
 	/* rounded rectangle'd lists */
 	
@@ -55,10 +74,11 @@ body {
 				-webkit-border-bottom-right-radius: 8px;
 				}
 				
-				
-			li:hover {
-				background: rgb(51,102,204);
-			}
+				li:hover {
+					background: rgb(51,102,204);
+					}
+					
+					
 			
 				
 				
@@ -75,7 +95,7 @@ body {
 			}
 			
 			ul li a.arrow {
-				background-image: url(/images/chevron.png); 
+				background-image: url(../images/chevron.png); 
 				background-repeat: no-repeat;
 				background-position: right 15px;
 			}
@@ -163,23 +183,35 @@ body {
 			ul.fields li {
 				font-size: 13px;
 			}
-		
-			ul.fields li h3 {
-				font-size: 13px;
-				text-align: right;
-				width: 70px;
-				margin: 2px 15px 0 0;
-				float: left;
-				display: inline-block;
-			}
 			
-				ul.fields li a {
-					margin-top: -9px;
+			
+				ul.fields li h3 {
+					font-size: 13px;
+					text-align: right;
+					width: 25%;
+					margin: 0 5px 0 0;
+					padding: 0;
+					vertical-align: top;
+					white-space: nowrap;
+					webkit-text-overflow: ellipsis;
 					display: inline-block;
-					clear: right;
-					width: 190px;
-					height: 100%;
 				}
+				
+				ul.fields li a {
+					width: 72.9%;
+					display: inline-block;
+					padding: 0;
+					margin: 0;
+					z-index: 300;
+					}
+					
+					ul.fields li a.arrow {
+						background-position: 105% 9px;
+					}
+					
+					ul.fields li a small {
+						padding-top: 4px;
+					}
 			
 			
 			
@@ -233,8 +265,9 @@ body {
 				padding: 0;
 				display: inline-block;
 				margin-left: 0px;
-				width: 280px;
+				width: 100%;
 			}
+			
 			
 				ul li textarea {
 					height: 120px;
@@ -244,7 +277,8 @@ body {
 				
 				ul li select {
 					text-indent: -6px;
-					background: transparent url(/images/chevron.png) no-repeat 270px 3px;
+					background: transparent url(../images/chevron.png) no-repeat right 3px;
+					-webkit-appearance: textfield;
 				}
 				
 				ul li input[type="checkbox"], ul li input[type="radio"] {
@@ -263,3 +297,205 @@ body {
 				
 
 		
+		
+		
+		
+		
+	/* Normal lists */
+	
+	body#normal h4 {
+		color: #fff;
+		background: rgb(154,159,170) url(../images/bglight.png) top left repeat-x;
+		border-top: 1px solid rgb(165,177,186);
+		text-shadow: #666 0 1px 0;
+		margin: 0;
+		padding: 2px 10px;
+	}
+	
+	
+	body#normal {
+		margin: 0;
+		padding: 0;
+		background-color: rgb(255,255,255);
+	}
+	
+	body#normal ul {
+		-webkit-border-radius: 0;
+		margin: 0;
+		border-left: 0;
+		border-right: 0;
+		}
+		
+		body#normal ul li {
+			font-size: 20px;
+		}
+		
+			body#normal ul li small {
+				font-size: 16px;
+				line-height: 20px;
+			}
+			
+			body#normal li {
+				-webkit-border-radius: 0;
+				}
+				
+			body#normal li em {
+				font-weight: normal;
+				font-style: normal;
+				}
+		
+		body#normal h4 + ul {
+			border-top: 1px solid rgb(152,158,164);
+			border-bottom: 1px solid rgb(113,125,133);
+		}
+		
+
+
+
+	/* data */
+	
+	ul.data li h4 {
+		margin: 10px 0 5px 0;
+	}
+	
+		ul.data li p {
+			text-align: left;
+		}
+		
+			ul.data li {
+				background: none;
+			}
+			
+			ul.data li a {
+				display: inline;
+				color: #2E3744;
+				text-decoration: underline;
+			}
+		
+		
+		
+	/* option panel */
+	
+	div#optionpanel {
+		background: url(../images/blackbg.png) top left repeat-x;
+		text-align: center;
+		padding: 20px 10px 15px 10px;
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;		
+		}
+		
+		div#optionpanel h2 {
+			font-size: 17px;
+			color: #fff;
+			text-shadow: #000 0 1px 0;
+		}
+		
+		
+		
+		
+	/***** BUTTONS *****/
+	
+	.button {
+		color: #fff;
+		font: bold 20px/46px Helvetica;
+		text-decoration: none;
+		text-align: center;
+		text-shadow: #000 0 1px 0;
+		border-width: 0px 14px 0px 14px;
+		display: block;
+		margin: 3px 0;
+		}
+		
+		div#optionpanel .button {
+		}
+		
+		
+		.green { -webkit-border-image: url(../images/greenButton.png) 0 14 0 14; }
+		.red { -webkit-border-image: url(../images/redButton.png) 0 14 0 14; }
+		
+		.white {
+			color: #000;
+			text-shadow: #fff 0px 1px 0;
+			-webkit-border-image: url(../images/whiteButton.png) 0 14 0 14;
+			}
+		
+		.black { -webkit-border-image: url(../images/grayButton.png) 0 14 0 14; }
+		
+		.white:hover, .blue:hover, .black:hover, .red:hover {
+			color: #fff !important;
+			text-shadow: #000 0px 1px 0;
+			-webkit-border-image: url(../images/blueButton.png) 0 14 0 14;
+		}
+		
+		
+		
+		
+		
+		
+		
+		
+	/* headers */
+	
+	div#header {
+		background: rgb(109,133,163) url(../images/bgHeader.png) repeat-x top;
+		border-top: 1px solid rgb(205,213,223);
+		border-bottom: 1px solid rgb(46,55,68);
+		-webkit-box-sizing: border-box;
+		padding: 10px;
+		margin: 0 0 0 -10px;
+		min-height: 45px;
+		}
+		
+		
+		div#header h1 {
+			color: #fff;
+			font: bold 20px/30px Helvetica;
+			text-shadow: #2d3642 0 -1px 0;
+			text-align: center;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			width: 49%;
+			padding: 5px 0;
+			margin: 2px 0 0 -24%;
+			position: absolute;
+			top: 0;
+			left: 50%;
+			}
+			
+			.nav {
+				color: #FFF;
+				background: none;
+				font: bold 12px/30px Helvetica;
+				border-width: 0 5px;
+				margin: 0;
+				padding: 0 3px;
+				width: auto;
+				height: 30px;
+				text-shadow: rgb(46,55,68) 0 -1px 0;
+				text-overflow: ellipsis;
+				text-decoration: none;
+				white-space: nowrap;
+				position: absolute;
+				overflow: hidden;
+				top: 7px;
+				right: 6px;
+				-webkit-border-image: url(../images/toolButton.png) 0 5 0 5;
+				}
+				
+				#backButton {
+					left: 6px;
+					right: auto;
+					padding: 0;
+					max-width: 55px;
+					border-width: 0 8px 0 14px;
+					-webkit-border-image: url(../images/backButton.png) 0 8 0 14;
+					}
+			
+			
+				.Action {
+					border-width: 0 5px;
+					-webkit-border-image: url(../images/actionButton.png) 0 5 0 5;
+				}

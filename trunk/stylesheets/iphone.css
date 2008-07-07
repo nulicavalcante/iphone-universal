@@ -239,6 +239,12 @@ body {
 			color: rgb(50,79,133);
 			font: normal 17px Helvetica;
 			float: right;
+			white-space: nowrap;
+			width: 20%;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			text-align: right;
 		}
 		
 		

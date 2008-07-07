@@ -307,7 +307,7 @@ body {
 		
 		
 		
-	/* Normal lists */
+	/* Normal lists and metal */
 	
 	body#normal h4 {
 		color: #fff;
@@ -319,18 +319,27 @@ body {
 	}
 	
 	
-	body#normal {
+	body#normal, body#metal {
 		margin: 0;
 		padding: 0;
 		background-color: rgb(255,255,255);
 	}
 	
-	body#normal ul {
+	body#normal ul, body#metal ul {
 		-webkit-border-radius: 0;
 		margin: 0;
 		border-left: 0;
 		border-right: 0;
 		}
+		
+		body#metal ul {
+			border-top: 0;
+			border-bottom: 0;
+			background: rgb(180,180,180);
+		}
+		
+		
+		
 		
 		body#normal ul li {
 			font-size: 20px;
@@ -341,7 +350,7 @@ body {
 				line-height: 20px;
 			}
 			
-			body#normal li {
+			body#normal li, body#metal li {
 				-webkit-border-radius: 0;
 				}
 				
@@ -355,6 +364,47 @@ body {
 			border-bottom: 1px solid rgb(113,125,133);
 		}
 		
+		
+		body#metal ul li {
+			border-top: 1px solid rgb(238,238,238);
+			border-bottom: 1px solid rgb(156,158,165);
+			background: url(../images/bgMetal.png) top left repeat-x;
+			font-size: 26px;
+			text-shadow: #fff 0 1px 0;
+			}
+			
+			body#metal ul li a {
+				background-position: center right;
+				line-height: 26px;
+				margin: 0;
+				padding: 13px 0;
+			}
+			
+				body#metal ul li a:hover {
+					color: rgb(0,0,0);
+				}	
+			
+						
+			body#metal ul li a em {
+				display: block;
+				font-size: 14px;
+				font-style: normal;
+				color: #444;
+				width: 50%;
+				line-height: 14px;
+			}
+			
+			body#metal ul li small {
+				float: right;
+				position: relative;
+				margin-top: 10px;
+				font-weight: bold;
+				}
+				
+				body#metal ul li a.arrow small {
+					padding-right: 30px;
+					line-height: 17px;
+				}
 
 
 
@@ -451,7 +501,7 @@ body {
 		-webkit-box-sizing: border-box;
 		padding: 10px;
 		margin: 0 0 0 -10px;
-		min-height: 45px;
+		min-height: 44px;
 		}
 		
 		

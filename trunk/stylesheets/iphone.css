@@ -383,6 +383,10 @@ body {
 				body#metal ul li a:hover {
 					color: rgb(0,0,0);
 				}	
+				
+					body#metal ul li:hover small {
+						color: inherit;
+					}
 			
 						
 			body#metal ul li a em {
@@ -401,6 +405,7 @@ body {
 				font-weight: bold;
 				}
 				
+							
 				body#metal ul li a.arrow small {
 					padding-right: 30px;
 					line-height: 17px;

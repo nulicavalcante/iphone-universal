@@ -539,13 +539,14 @@
 		
 			ul li input[type="text"], ul li input[type="password"], ul li textarea, ul li select {
 				color: #777;
-				background: white;
+				background: #fff url(../.png); /* this is a hack due the default input shadow that iphones uses on textfields */
 				border: 0;				
 				font: normal 17px Helvetica;
 				padding: 0;
 				display: inline-block;
 				margin-left: 0px;
 				width: 100%;
+				-webkit-appearance: textarea;
 			}
 			
 			
@@ -556,9 +557,10 @@
 				}
 				
 				ul li select {
-					text-indent: -6px;
-					background: transparent url(../images/chevron.png) no-repeat right 3px;
+					text-indent: 0px;
+					background: transparent url(../images/chevron.png) no-repeat 102% 3px;
 					-webkit-appearance: textfield;
+					margin-left: -6px;
 				}
 				
 				ul li input[type="checkbox"], ul li input[type="radio"] {

@@ -183,10 +183,12 @@
 				/* universal arrows */
 				
 				ul li.arrow {
-					background: url(../images/chevron.png) no-repeat right center;
+					background-image: url(../images/chevron.png);
+					background-position: right center;
+					background-repeat: no-repeat;
 					}
 					
-					
+									
 				
 				/* universal links on list */
 				
@@ -290,7 +292,7 @@
 					/* resize without labels */
 					
 					ul li.arrow a {
-						width: 90%;
+						width: 95%;
 						}
 					
 						/* with labels */
@@ -437,7 +439,6 @@
 									}
 
 									body#metal ul li a {
-										background-position: center right;
 										line-height: 26px;
 										margin: 0;
 										padding: 13px 0;
@@ -469,13 +470,19 @@
 										}
 
 
-										body#metal ul li a.arrow small {
-											padding-right: 30px;
+										body#metal ul li.arrow a small {
+											padding-right: 0;
 											line-height: 17px;
 										}
 										
 										
+										body#metal ul li.arrow {
+											background: url(../images/bgMetal.png) top left repeat-x,
+											url(../images/chevron.png) right center no-repeat;
+										}
 										
+										
+																
 										/* option panel */
 
 											div#optionpanel {
@@ -548,8 +555,7 @@
 				width: 100%;
 				-webkit-appearance: textarea;
 			}
-			
-			
+						
 				ul li textarea {
 					height: 120px;
 					padding: 0;

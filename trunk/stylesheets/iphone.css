@@ -141,8 +141,44 @@
 						div#header ul {
 							margin-top: 15px;
 						}
-		
-		
+						
+						div#header p {
+							color: rgb(60,70,80);
+							font-weight: bold;
+							font-size: 13px;
+							text-align: center;
+							clear: both;
+							position: absolute;
+							top: 4px;
+							left: 35px;
+							right: 35px;
+							margin: 0;
+							text-shadow: #C0CBDB 0 1px 0;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							overflow: hidden;
+						}
+						
+						div.pre {
+							height: 60px;
+							}
+
+
+							div.pre h1 {
+								top: 18px !important;
+								}
+								
+							div.pre a {
+								top: 25px !important;
+								right: 6px;
+								}
+								
+							div.pre a#Backbutton {
+								left: 6px !important;
+							}	
+								
+								
+								
 		
 		
 		/***** List (base) ******/
@@ -390,7 +426,7 @@
 								background-color: rgb(255,255,255);
 							}
 
-							body#normal ul, body#metal ul {
+							body#normal ul, body#metal ul, body#plastic ul {
 								-webkit-border-radius: 0;
 								margin: 0;
 								border-left: 0;
@@ -724,3 +760,52 @@
 									color: transparent;
 								}
 									
+
+
+	/***** PLASTIC LISTS *****/
+	
+	body#plastic {
+		margin: 0;
+		padding: 0;
+		background: rgb(173,173,173);
+	}
+
+	body#plastic ul {
+		-webkit-border-radius: 0;
+		margin: 0;
+		border-left: 0;
+		border-right: 0;
+		border-top: 0;
+		background: rgb(173,173,173);
+		}
+		
+		
+		body#plastic ul li {
+			-webkit-border-radius: 0;
+			border-top: 1px solid rgb(191,191,191);
+			border-bottom: 1px solid rgb(157,157,157);
+		}
+		
+		
+			body#plastic ul li:nth-child(odd) {
+				background: rgb(152,152,152);
+				border-top: 1px solid rgb(181,181,181);
+				border-bottom: 1px solid rgb(138,138,138);
+			}
+		
+		
+		body#plastic ul + p {
+			font-size: 11px;
+			color: #2f3237;
+			text-shadow: none;
+			padding: 10px 10px;		
+			}
+			
+			body#plastic ul + p strong {
+				font-size: 14px;
+				line-height: 18px;
+				text-shadow: #fff 0 1px 0;
+			}
+		
+		
+		

@@ -776,7 +776,7 @@
 		border-left: 0;
 		border-right: 0;
 		border-top: 0;
-		background: rgb(173,173,173);
+		background-color: rgb(173,173,173);
 		}
 		
 		
@@ -788,7 +788,7 @@
 		
 		
 			body#plastic ul li:nth-child(odd) {
-				background: rgb(152,152,152);
+				background-color: rgb(152,152,152);
 				border-top: 1px solid rgb(181,181,181);
 				border-bottom: 1px solid rgb(138,138,138);
 			}
@@ -806,6 +806,24 @@
 				line-height: 18px;
 				text-shadow: #fff 0 1px 0;
 			}
+			
+			body#plastic ul li a {
+				text-shadow: rgb(211,211,211) 0 1px 0;
+			}
+			
+			body#plastic ul li:nth-child(odd) a {
+				text-shadow: rgb(191,191,191) 0 1px 0;
+			}
+			
+			
+			body#plastic ul li small {
+				color: #3C3C3C;
+				text-shadow: rgb(211,211,211) 0 1px 0;
+				font-size: 13px;
+				font-weight: bold;
+				text-transform: uppercase;
+				line-height: 24px;
+				}
 		
 		
 		

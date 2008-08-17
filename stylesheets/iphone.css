@@ -225,6 +225,13 @@
 					background-repeat: no-repeat;
 					}
 					
+					
+				#plastic ul li.arrow, #metal ul li.arrow {
+					background-image: url(../images/chevron_dg.png);
+					background-position: right center;
+					background-repeat: no-repeat;
+					}
+					
 									
 				
 				/* universal links on list */
@@ -515,7 +522,7 @@
 										
 										body#metal ul li.arrow {
 											background: url(../images/bgMetal.png) top left repeat-x,
-											url(../images/chevron.png) right center no-repeat;
+											url(../images/chevron_dg.png) right center no-repeat;
 										}
 										
 										

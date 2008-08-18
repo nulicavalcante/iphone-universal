@@ -837,12 +837,17 @@
 				
 				
 				
-	/**** MINI BANNERS ****/
+	/**** MINI & BIG BANNERS ****/
 	
-			#plastic ul.minibanner {
-				margin: 10px 10px;
+			#plastic ul.minibanner, #plastic ul.bigbanner {
+				margin: 10px;
 				border: 0;
 				height: 81px;
+				clear: both;
+				}
+				
+				#plastic ul.bigbanner {
+					height: 140px !important;
 				}
 				
 				#plastic ul.minibanner li {
@@ -853,6 +858,17 @@
 					float: left;
 					-webkit-border-radius: 5px;
 					padding: 0;
+					}
+					
+				#plastic ul.bigbanner li {
+					border: 1px solid rgb(138,138,138);
+					background-color: rgb(152,152,152);
+					width: 296px;
+					height: 140px;
+					float: left;
+					-webkit-border-radius: 5px;
+					padding: 0;
+					margin-bottom: 10px;
 					}
 					
 					#plastic ul.minibanner li:first-child {
@@ -866,7 +882,15 @@
 						display: block;
 						width: 145px;
 						height: 81px;
-					}
+						}
+						
+					#plastic ul.bigbanner li a {
+						color: transparent;
+						text-shadow: none;
+						display: block;
+						width: 296px;
+						height: 145px;
+						}
 		
 		
 		

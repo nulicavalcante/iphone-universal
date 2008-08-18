@@ -834,6 +834,39 @@
 				text-transform: uppercase;
 				line-height: 24px;
 				}
+				
+				
+				
+	/**** MINI BANNERS ****/
+	
+			#plastic ul.minibanner {
+				margin: 10px 10px;
+				border: 0;
+				height: 81px;
+				}
+				
+				#plastic ul.minibanner li {
+					border: 1px solid rgb(138,138,138);
+					background-color: rgb(152,152,152);
+					width: 145px;
+					height: 81px;
+					float: left;
+					-webkit-border-radius: 5px;
+					padding: 0;
+					}
+					
+					#plastic ul.minibanner li:first-child {
+						margin-right: 6px;
+					}
+					
+					
+					#plastic ul.minibanner li a {
+						color: transparent;
+						text-shadow: none;
+						display: block;
+						width: 145px;
+						height: 81px;
+					}
 		
 		
 		

@@ -586,6 +586,9 @@
 				padding: 7px 10px;
 			}
 			
+			ul.form li.error { border: 2px solid red; }			
+			ul.form li.error + li.error { border-top: 0; }
+			
 			ul.form li:hover { background: #fff; }
 		
 			ul li input[type="text"], ul li input[type="password"], ul li textarea, ul li select {
@@ -598,7 +601,7 @@
 				margin-left: 0px;
 				width: 100%;
 				-webkit-appearance: textarea;
-			}
+				}
 						
 				ul li textarea {
 					height: 120px;
@@ -608,9 +611,10 @@
 				
 				ul li select {
 					text-indent: 0px;
-					background: transparent url(../images/chevron.png) no-repeat 102% 3px;
+					background: transparent url(../images/chevron.png) no-repeat 103% 3px;
 					-webkit-appearance: textfield;
 					margin-left: -6px;
+					width: 104%;
 				}
 				
 				ul li input[type="checkbox"], ul li input[type="radio"] {

@@ -1020,3 +1020,56 @@
 			}
 		
 		
+		
+		
+		
+		
+		/**** image grids ****/
+		
+		
+		body#images {
+			background: #fff;
+			margin: 0;
+		}
+		
+			body#images ul {
+				margin: 4px 4px 4px 0;
+				border: 0;
+				-webkit-border-radius: 0;
+				}
+				
+				body#images ul li {
+					border: 1px solid #C0D5DD;
+					-webkit-border-radius: 0;
+					width: 73px;
+					height: 73px;
+					float: left;
+					margin: 0 0 4px 4px;
+					background: #F4FBFE url(../images/image-loading.gif) no-repeat center center;
+					padding: 0;
+					}
+					
+					body#images ul li a {
+						display: block;
+						width: 100%;
+						height: 100%;
+						margin: 0;
+						padding: 0;
+					}
+		
+		
+		/*** BLANK PAGES ***/
+		
+		body#blank {
+			background: #fff;
+		}
+		
+		
+		body#blank p {
+			color: #898989;
+			text-align: center;
+			margin: 250px 0 0 0;
+			}
+			
+			
+		

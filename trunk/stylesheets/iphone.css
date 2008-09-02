@@ -329,7 +329,17 @@
 						padding: 0 15px;
 					}
 					
-					
+					ul li small.counter {
+						font-size: 17px !important;
+						line-height: 13px !important;
+						font-weight: bold;
+						background: rgb(154,159,170);
+						color: #fff;
+						-webkit-border-radius: 11px;
+						padding: 4px 10px 5px 10px;
+						display: inline !important;
+						width: auto;
+					}
 					
 					
 	
